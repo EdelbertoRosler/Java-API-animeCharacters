@@ -1,9 +1,10 @@
 package com.animeCharacters.APIanimes.repositories;
 
+import com.animeCharacters.APIanimes.entities.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ICharacterRepository extends JpaRepository<Character,Long> {
+public interface IPersonaRepository extends JpaRepository<Persona,Long> {
 
 }

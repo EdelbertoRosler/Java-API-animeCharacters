@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @Entity
-public class Character implements Serializable {
+public class Persona implements Serializable {
     private static final long serialVersionVID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +28,7 @@ public class Character implements Serializable {
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Skills> skills;
 
-    public Character(String animename, String name, Date birthdate, List<Skills> skills) {
+    public Persona(String animename, String name, Date birthdate, List<Skills> skills) {
         this.animename = animename;
         this.name = name;
         this.birthdate = birthdate;
